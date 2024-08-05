@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wearable Health Monitoring Device Survey</title>
+    <link rel="stylesheet" href="stylles.css">
+</head>
+<body>
+    <h1>Wearable Health Monitoring Device Survey</h1>
+    <p>We are conducting this survey to gather insights on wearable health monitoring devices. Your feedback will help us design a product that meets your needs. Thank you for participating!</p>
+    
+    <form action="https://example.com/submit" method="post">
+        <!-- Section 1: Demographics -->
+        <fieldset>
+            <legend>Section 1: Demographics</legend>
+            <label for="age">What is your age group?</label><br>
+            <select id="age" name="age">
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55+">55+</option>
+            </select><br><br>
+            
+            <label>What is your gender?</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="prefer-not-to-say" name="gender" value="Prefer not to say">
+            <label for="prefer-not-to-say">Prefer not to say</label><br><br>
+            
+            <label for="occupation">What is your occupation?</label><br>
+            <input type="text" id="occupation" name="occupation"><br><br>
+        </fieldset>
+
+        <!-- Section 2: Health and Fitness Habits -->
+        <fieldset>
+            <legend>Section 2: Health and Fitness Habits</legend>
+            <label>How often do you engage in physical activity?</label><br>
+            <input type="radio" id="daily" name="activity" value="Daily">
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="3-4-times" name="activity" value="3-4 times a week">
+            <label for="3-4-times">3-4 times a week</label><br>
+            <input type="radio" id="1-2-times" name="activity" value="1-2 times a week">
+            <label for="1-2-times">1-2 times a week</label><br>
+            <input type="radio" id="rarely" name="activity" value="Rarely">
+            <label for="rarely">Rarely</label><br>
+            <input type="radio" id="never" name="activity" value="Never">
+            <label for="never">Never</label><br><br>
+            
+            <label>Do you currently use any health monitoring devices?</label><br>
+            <input type="radio" id="yes" name="current_device" value="Yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="current_device" value="No">
+            <label for="no">No</label><br><br>
+            
+            <label for="devices">If yes, which device(s) do you use?</label><br>
+            <input type="text" id="devices" name="devices"><br><br>
+        </fieldset>
+
+        <!-- Section 3: Health Monitoring Needs -->
+        <fieldset>
+            <legend>Section 3: Health Monitoring Needs</legend>
+            <label>Which health metrics are most important for you to monitor? (Select all that apply)</label><br>
+            <input type="checkbox" id="heart-rate" name="metrics" value="Heart rate">
+            <label for="heart-rate">Heart rate</label><br>
+            <input type="checkbox" id="spO2" name="metrics" value="SpO2 (oxygen saturation)">
+            <label for="spO2">SpO2 (oxygen saturation)</label><br>
+            <input type="checkbox" id="temperature" name="metrics" value="Body temperature">
+            <label for="temperature">Body temperature</label><br>
+            <input type="checkbox" id="sleep" name="metrics" value="Sleep patterns">
+            <label for="sleep">Sleep patterns</label><br>
+            <input type="checkbox" id="activity" name="metrics" value="Activity levels (steps, distance)">
+            <label for="activity">Activity levels (steps, distance)</label><br>
+            <input type="checkbox" id="others" name="metrics" value="Others">
+            <label for="others">Others (please specify)</label><br>
+            <input type="text" id="others-specify" name="others-specify"><br><br>
+            
+            <label for="challenges">What challenges do you face with your current health monitoring solutions?</label><br>
+            <textarea id="challenges" name="challenges"></textarea><br><br>
+        </fieldset>
+
+        <!-- Section 4: Preferences and Features -->
+        <fieldset>
+            <legend>Section 4: Preferences and Features</legend>
+            <label>How important are the following features in a health monitoring device? (Rate on a scale of 1-5)</label><br>
+            <!-- You can create a scale input here; for simplicity, we use text inputs -->
+            <label for="accuracy">Accuracy of measurements (1-5):</label>
+            <input type="number" id="accuracy" name="accuracy" min="1" max="5"><br>
+            <label for="battery">Battery life (1-5):</label>
+            <input type="number" id="battery" name="battery" min="1" max="5"><br>
+            <label for="comfort">Comfort and design (1-5):</label>
+            <input type="number" id="comfort" name="comfort" min="1" max="5"><br>
+            <label for="ease">Ease of use (1-5):</label>
+            <input type="number" id="ease" name="ease" min="1" max="5"><br>
+            <label for="integration">Integration with mobile apps (1-5):</label>
+            <input type="number" id="integration" name="integration" min="1" max="5"><br>
+            <label for="privacy">Data privacy and security (1-5):</label>
+            <input type="number" id="privacy" name="privacy" min="1" max="5"><br><br>
+            
+            <label for="price">What is your preferred price range for a wearable health monitoring device?</label><br>
+            <select id="price" name="price">
+                <option value="Below GHS 200">Below GHS 200</option>
+                <option value="GHS 200 - GHS 400">GHS 200 - GHS 400</option>
+                <option value="GHS 400 - GHS 600">GHS 400 - GHS 600</option>
+                <option value="Above GHS 600">Above GHS 600</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Section 5: Feedback and Suggestions -->
+        <fieldset>
+            <legend>Section 5: Feedback and Suggestions</legend>
+            <label for="improvements">What improvements would you like to see in current wearable health monitoring devices?</label><br>
+            <textarea id="improvements" name="improvements"></textarea><br><br>
+            
+            <label for="comments">Any additional comments or suggestions?</label><br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+        </fieldset>
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
